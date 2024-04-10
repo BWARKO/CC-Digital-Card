@@ -1,7 +1,7 @@
 let rain = []; 
 
 function preload() {
-  font = loadFont('font.ttf');
+  font = loadFont('./assets/font.ttf');
 }
 
 function setup() {
