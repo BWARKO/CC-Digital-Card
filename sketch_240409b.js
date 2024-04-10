@@ -1,5 +1,9 @@
 let rain = []; 
 
+function preload() {
+  font = loadFont('font.ttf');
+}
+
 function setup() {
   createCanvas(900, 602).center('horizontal');
   frameRate(60);
@@ -142,6 +146,13 @@ function draw() {
   // fog effect
   fill(150, 150, 150, 25)
   rect(0, 0, 950, 650);
+  
+  // text
+  textAlign(CENTER, BOTTOM);
+  textFont(font)
+  textSize(64);
+  fill(0);
+  text('SORRY YOU HAD A BAD DAY! ;C', 450, 575);
 }
 
 class Rain {
